@@ -416,25 +416,25 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
-  - {fileID: -7920155149929290788}
-  - {fileID: 2012294939544167839}
   - {fileID: 2397846901700871488}
   - {fileID: 4178633741958700323}
+  - {fileID: 7790065570651676166}
+  - {fileID: -2979021806279696815}
+  - {fileID: -3295898289398401974}
   - {fileID: -5221758083907225889}
+  - {fileID: 7506924505769076463}
+  - {fileID: -6792514743904888605}
+  - {fileID: -1043307712585282291}
+  - {fileID: -6100248812003628782}
   - {fileID: 6526699068411090469}
   - {fileID: -8103807110995081049}
-  - {fileID: 3664923156918427382}
-  - {fileID: -6792514743904888605}
-  - {fileID: -3295898289398401974}
   - {fileID: 5319631267692224691}
-  - {fileID: -6100248812003628782}
-  - {fileID: 7790065570651676166}
-  - {fileID: -1043307712585282291}
-  - {fileID: -7459043989794365210}
+  - {fileID: 2012294939544167839}
   - {fileID: -7031257664882032380}
+  - {fileID: 3664923156918427382}
+  - {fileID: -7920155149929290788}
   - {fileID: -5021958422291558158}
-  - {fileID: 7506924505769076463}
-  - {fileID: -2979021806279696815}
+  - {fileID: -7459043989794365210}
   m_renderMode: 1
   m_latencyOptimization: 0
   m_autoColorSubmissionMode: 1
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &3664923156918427382
@@ -590,7 +590,7 @@ MonoBehaviour:
   lateLatchingDebug: 0
   optimizeMultiviewRenderRegions: 0
   multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegions: 0
+  m_hasMigratedMultiviewRenderRegions: 1
   spacewarpMotionVectorTextureFormat: 0
 --- !u!114 &4780002538477715995
 MonoBehaviour:
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b862ee14fb479fbfe5fffe655d3ed3, type: 3}
   m_Name: MetaQuestTouchProControllerProfile Android
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.Interactions.MetaQuestTouchProControllerProfile
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Meta Quest Touch Pro Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metaquestpro
@@ -821,24 +821,24 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
-  - {fileID: 4113011190770734764}
-  - {fileID: 4780002538477715995}
-  - {fileID: 5366367885408969249}
-  - {fileID: 4528978555954220508}
+  - {fileID: 3666688615050669190}
   - {fileID: 5678140803080415200}
   - {fileID: 6109834064679819769}
-  - {fileID: 3666688615050669190}
+  - {fileID: 9142214985279846768}
+  - {fileID: -1601731061330570820}
+  - {fileID: -3812385984687503566}
   - {fileID: -4412507031578595076}
+  - {fileID: -3663047967394834190}
+  - {fileID: 4528978555954220508}
+  - {fileID: 5396275828946976980}
   - {fileID: 5334123142984421932}
   - {fileID: -7616065191228783085}
-  - {fileID: -3056813609189383427}
-  - {fileID: -3812385984687503566}
-  - {fileID: 5396275828946976980}
-  - {fileID: 9142214985279846768}
-  - {fileID: -3663047967394834190}
-  - {fileID: 8798472786022688398}
+  - {fileID: 5366367885408969249}
+  - {fileID: 4780002538477715995}
   - {fileID: 5003622768196272049}
-  - {fileID: -1601731061330570820}
+  - {fileID: -3056813609189383427}
+  - {fileID: 4113011190770734764}
+  - {fileID: 8798472786022688398}
   m_renderMode: 1
   m_latencyOptimization: 0
   m_autoColorSubmissionMode: 1
@@ -850,7 +850,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &7790065570651676166
