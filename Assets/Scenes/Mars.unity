@@ -2476,7 +2476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d448ce39455d845b45a0786317c354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  panelSettings: {fileID: 0}
+  panelSettings: {fileID: 562799198}
 --- !u!1 &1386954859
 GameObject:
   m_ObjectHideFlags: 0
