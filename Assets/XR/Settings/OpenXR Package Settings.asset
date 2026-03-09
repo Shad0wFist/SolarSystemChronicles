@@ -35,11 +35,30 @@ MonoBehaviour:
   m_Name: PICOSpatialAnchor Android
   m_EditorClassIdentifier: Unity.XR.PICO::Unity.XR.OpenXR.Features.PICOSupport.PICOSpatialAnchor
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: PICO Spatial Anchor
   version: 1.0.0
   featureIdInternal: com.pico.openxr.feature.spatialanchor
   openxrExtensionStrings: XR_PICO_spatial_anchor XR_PICO_spatial_sensing XR_EXT_future
+  company: PICO
+  priority: 0
+  required: 0
+--- !u!114 &-8371808036994205553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a6d03de5f8f34383932f29d464a21, type: 3}
+  m_Name: PICONeo3ControllerProfile Android
+  m_EditorClassIdentifier: Unity.XR.OpenXRPico::UnityEngine.XR.OpenXR.Features.Interactions.PICONeo3ControllerProfile
+  m_enabled: 0
+  nameUi: PICO Neo3 Touch Controller Profile
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.input.PICONeo3touch
+  openxrExtensionStrings: XR_BD_controller_interaction
   company: PICO
   priority: 0
   required: 0
@@ -85,6 +104,26 @@ MonoBehaviour:
   required: 0
   cacheSize: 1048576
   perThreadCacheSize: 51200
+--- !u!114 &-7914027534963502337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a7d8f73c864e74eb753124087176f4, type: 3}
+  m_Name: PICO4ControllerProfile Android
+  m_EditorClassIdentifier: Unity.XR.OpenXRPico::UnityEngine.XR.OpenXR.Features.Interactions.PICO4ControllerProfile
+  m_enabled: 0
+  nameUi: PICO4 Touch Controller Profile
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.input.PICO4touch
+  openxrExtensionStrings: XR_BD_controller_interaction
+  company: PICO
+  priority: 0
+  required: 0
 --- !u!114 &-7616065191228783085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +226,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &-6317568414844962786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ea647c7f744df897be6365cbf559b7, type: 3}
+  m_Name: PICOG3ControllerProfile Android
+  m_EditorClassIdentifier: Unity.XR.OpenXRPico::UnityEngine.XR.OpenXR.Features.Interactions.PICOG3ControllerProfile
+  m_enabled: 0
+  nameUi: PICOG3 Touch Controller Profile
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.input.PICOG3touch
+  openxrExtensionStrings: XR_BD_controller_interaction
+  company: PICO
+  priority: 0
+  required: 0
 --- !u!114 &-6287865659805908143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +264,26 @@ MonoBehaviour:
   featureIdInternal: com.meta.openxr.feature.foveation
   openxrExtensionStrings: 'XR_FB_foveation XR_FB_foveation_configuration XR_FB_foveation_vulkan '
   company: Meta
+  priority: 0
+  required: 0
+--- !u!114 &-6123575781639959496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233eef4f97ef4b0b8b65c5030c0b05f7, type: 3}
+  m_Name: DisplayRefreshRateFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR.Features.PICOSupport::Unity.XR.OpenXR.Features.PICOSupport.DisplayRefreshRateFeature
+  m_enabled: 0
+  nameUi: OpenXR Display Refresh Rate
+  version: 1.0.0
+  featureIdInternal: com.pico.openxr.feature.refreshrate
+  openxrExtensionStrings: XR_FB_display_refresh_rate
+  company: PICO
   priority: 0
   required: 0
 --- !u!114 &-6100248812003628782
@@ -312,6 +391,26 @@ MonoBehaviour:
     XR_BD_composition_layer_settings XR_KHR_composition_layer_depth '
   company: PICO
   priority: 100
+  required: 0
+--- !u!114 &-5081639261736141536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d49168b6dfb469dadf8cd56e4ab8884, type: 3}
+  m_Name: PassthroughFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR.Features.PICOSupport::Unity.XR.OpenXR.Features.PICOSupport.PassthroughFeature
+  m_enabled: 0
+  nameUi: OpenXR Passthrough
+  version: 1.0.0
+  featureIdInternal: com.pico.openxr.feature.passthrough
+  openxrExtensionStrings: XR_FB_passthrough
+  company: PICO
+  priority: 0
   required: 0
 --- !u!114 &-5021958422291558158
 MonoBehaviour:
@@ -446,7 +545,6 @@ MonoBehaviour:
   m_Name: PICOSpatialMesh Android
   m_EditorClassIdentifier: Unity.XR.PICO::Unity.XR.OpenXR.Features.PICOSupport.PICOSpatialMesh
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: PICO Spatial Mesh
   version: 1.0.0
   featureIdInternal: com.pico.openxr.feature.spatialmesh
@@ -493,6 +591,28 @@ MonoBehaviour:
   version: 3.4.0
   featureIdInternal: com.pico.openxr.feature.LayerSecureContent
   openxrExtensionStrings: XR_FB_composition_layer_secure_content
+  company: PICO
+  priority: 0
+  required: 0
+--- !u!114 &-3582186993818739496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077bca9897b444788c83491c066a79b1, type: 3}
+  m_Name: OpenXRExtensions Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR.Features.PICOSupport::Unity.XR.OpenXR.Features.PICOSupport.OpenXRExtensions
+  m_enabled: 1
+  nameUi: PICO OpenXR Features
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.pico.features
+  openxrExtensionStrings: XR_EXT_local_floor XR_FB_triangle_mesh XR_FB_composition_layer_alpha_blend
+    XR_KHR_composition_layer_color_scale_bias XR_KHR_composition_layer_cylinder XR_KHR_composition_layer_equirect
+    XR_KHR_composition_layer_cube
   company: PICO
   priority: 0
   required: 0
@@ -592,7 +712,6 @@ MonoBehaviour:
   m_Name: PICOSceneCapture Android
   m_EditorClassIdentifier: Unity.XR.PICO::Unity.XR.OpenXR.Features.PICOSupport.PICOSceneCapture
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: PICO Scene Capture
   version: 1.0.0
   featureIdInternal: com.pico.openxr.feature.scenecapture
@@ -752,6 +871,26 @@ MonoBehaviour:
   company: Meta
   priority: 0
   required: 0
+--- !u!114 &-122138090886061208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f528fb360066460c862f7a0ce1d8ad4c, type: 3}
+  m_Name: PICO4UltraControllerProfile Android
+  m_EditorClassIdentifier: Unity.XR.OpenXRPico::UnityEngine.XR.OpenXR.Features.Interactions.PICO4UltraControllerProfile
+  m_enabled: 0
+  nameUi: PICO4 Ultra Touch Controller Profile
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.input.PICO4Ultratouch
+  openxrExtensionStrings: XR_BD_controller_interaction
+  company: PICO
+  priority: 0
+  required: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,6 +949,26 @@ MonoBehaviour:
   company: PICO
   priority: 0
   required: 0
+--- !u!114 &207321903967734142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105a2b5276c1435d8411162e42e5064e, type: 3}
+  m_Name: LayerSecureContentFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR.Features.PICOSupport::Unity.XR.OpenXR.Features.PICOSupport.LayerSecureContentFeature
+  m_enabled: 0
+  nameUi: OpenXR Composition Layer Secure Content
+  version: 1.0.0
+  featureIdInternal: com.pico.openxr.feature.LayerSecureContent
+  openxrExtensionStrings: XR_FB_composition_layer_secure_content
+  company: PICO
+  priority: 0
+  required: 0
 --- !u!114 &1254812209678166401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,6 +987,26 @@ MonoBehaviour:
   version: 1.0.0
   featureIdInternal: com.unity.openxr.feature.input.PICOG3touch
   openxrExtensionStrings: XR_BD_controller_interaction
+  company: PICO
+  priority: 0
+  required: 0
+--- !u!114 &1584583272004684394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446315a043ab4b998f5a055737c6122b, type: 3}
+  m_Name: BodyTrackingFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR.Features.PICOSupport::Unity.XR.OpenXR.Features.PICOSupport.BodyTrackingFeature
+  m_enabled: 0
+  nameUi: PICO Body Tracking
+  version: 1.0.0
+  featureIdInternal: com.pico.openxr.feature.PICO_BodyTracking
+  openxrExtensionStrings: XR_BD_body_tracking XR_PICO_body_tracking2
   company: PICO
   priority: 0
   required: 0
@@ -965,6 +1144,27 @@ MonoBehaviour:
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
+--- !u!114 &3653084979591278617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa5b568c4324bd4faad2da2e7ee7e84, type: 3}
+  m_Name: PICOFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR.Features.PICOSupport::Unity.XR.OpenXR.Features.PICOSupport.PICOFeature
+  m_enabled: 1
+  nameUi: PICO Support
+  version: 1.4.1
+  featureIdInternal: com.unity.openxr.feature.pico
+  openxrExtensionStrings: 
+  company: PICO
+  priority: 0
+  required: 0
+  isPicoSupport: 0
 --- !u!114 &3664923156918427382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,6 +1451,27 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &6045473250793854034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f636716e11d15b4bbafb76eb9d63555, type: 3}
+  m_Name: FoveationFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR.Features.PICOSupport::FoveationFeature
+  m_enabled: 0
+  nameUi: OpenXR Foveation
+  version: 1.0.0
+  featureIdInternal: com.pico.openxr.feature.foveation
+  openxrExtensionStrings: 'XR_FB_foveation XR_FB_foveation_configuration XR_FB_foveation_vulkan
+    XR_META_foveation_eye_tracked XR_META_vulkan_swapchain_create_info XR_FB_swapchain_update_state '
+  company: PICO
+  priority: 0
+  required: 0
 --- !u!114 &6109834064679819769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,7 +1573,22 @@ MonoBehaviour:
   - {fileID: 5366367885408969249}
   - {fileID: 4780002538477715995}
   - {fileID: 5003622768196272049}
+  - {fileID: 207321903967734142}
+  - {fileID: -6123575781639959496}
+  - {fileID: 6045473250793854034}
+  - {fileID: -5081639261736141536}
+  - {fileID: 7929120579628816256}
   - {fileID: -3056813609189383427}
+  - {fileID: 1584583272004684394}
+  - {fileID: -8371808036994205553}
+  - {fileID: -3582186993818739496}
+  - {fileID: -2235676435117202317}
+  - {fileID: -9005776612939205090}
+  - {fileID: -3678913952494851617}
+  - {fileID: 3653084979591278617}
+  - {fileID: -7914027534963502337}
+  - {fileID: -122138090886061208}
+  - {fileID: -6317568414844962786}
   - {fileID: 4113011190770734764}
   - {fileID: 8798472786022688398}
   m_renderMode: 1
@@ -1387,6 +1623,26 @@ MonoBehaviour:
   featureIdInternal: com.unity.openxr.feature.input.eyetracking
   openxrExtensionStrings: XR_EXT_eye_gaze_interaction
   company: Unity
+  priority: 0
+  required: 0
+--- !u!114 &7929120579628816256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a4218836ed47e2b2fe51c7c56925c7, type: 3}
+  m_Name: PerformanceSettingsFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR.Features.PICOSupport::Unity.XR.OpenXR.Features.PICOSupport.PerformanceSettingsFeature
+  m_enabled: 0
+  nameUi: OpenXR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.pico.openxr.feature.performancesettings
+  openxrExtensionStrings: XR_EXT_performance_settings
+  company: PICO
   priority: 0
   required: 0
 --- !u!114 &8443224466069835638

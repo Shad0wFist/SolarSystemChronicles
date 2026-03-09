@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "SolarSystemChronicles.slnx"
+    "dotnet.defaultSolution": "Solar System Chonicles.slnx"
 }
