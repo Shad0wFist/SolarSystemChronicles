@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ShipScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Mars.unity
+    path: Assets/Scenes/MarsLand.unity
     guid: 1f1926ea1292e2745bd23ec8e165dc61
   - enabled: 1
     path: Assets/Scenes/Venus.unity
