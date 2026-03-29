@@ -191,9 +191,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1377197793697218, guid: b4201d402613a4464b35c805dafcca62, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 1628933999407032, guid: b4201d402613a4464b35c805dafcca62, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1853253210}
+      addedObject: {fileID: 1449111111}
+    - targetCorrespondingSourceObject: {fileID: 1103792917632102, guid: b4201d402613a4464b35c805dafcca62, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1595534299}
   m_SourcePrefab: {fileID: 100100000, guid: b4201d402613a4464b35c805dafcca62, type: 3}
 --- !u!1001 &189652934
 PrefabInstance:
@@ -203,6 +206,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1820348994}
     m_Modifications:
+    - target: {fileID: 3278985597476859260, guid: 9e2f4d71a09f6bc4bab5be05a1f497bf, type: 3}
+      propertyPath: m_text
+      value: "\u041F\u041B\u0410\u041D\u0415\u0422\u0410: \u0421\u0410\u0422\u0423\u0420\u041D\r\n\u0410\u0422\u041C\u041E\u0421\u0424\u0415\u0420\u0410:
+        \u0412\u041E\u0414\u041E\u0420\u041E\u0414-\u0413\u0415\u041B\u0418\u0419\r\n\u0421\u0420\u0415\u0414\u041D\u042F\u042F
+        \u0422\u0415\u041C\u041F\u0415\u0420\u0410\u0422\u0423\u0420\u0410: -140\xB0C\r\n\u0414\u0418\u0410\u041C\u0415\u0422\u0420:
+        116,460 \u041A\u041C\r\n\u0413\u0420\u0410\u0412\u0418\u0422\u0410\u0426\u0418\u042F:
+        10.44 \u041C/\u0421\xB2\r\n\u0412 9.1 \u0420\u0410\u0417 \u0411\u041E\u041B\u042C\u0428\u0415
+        \u0417\u0415\u041C\u041B\u0418"
+      objectReference: {fileID: 0}
     - target: {fileID: 5131381877529307342, guid: 9e2f4d71a09f6bc4bab5be05a1f497bf, type: 3}
       propertyPath: m_Name
       value: MonitorCanvas
@@ -297,6 +309,27 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8127286344358216109, guid: 9e2f4d71a09f6bc4bab5be05a1f497bf, type: 3}
   m_PrefabInstance: {fileID: 189652934}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &272308702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1628933999407032, guid: b4201d402613a4464b35c805dafcca62, type: 3}
+  m_PrefabInstance: {fileID: 1606089167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &272308706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272308702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52685865df53cc845b45ec886ab3ce0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlanetRotation
+  rotationSpeed: 10
+  selectedAxis: 1
+  customAxis: {x: 0, y: 0, z: 0}
+  clockwise: 0
 --- !u!1001 &877607807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -354,6 +387,48 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c7bd42ba9e7d6b47903ed83601d6078, type: 3}
+--- !u!1 &1449111107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1628933999407032, guid: b4201d402613a4464b35c805dafcca62, type: 3}
+  m_PrefabInstance: {fileID: 122833243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1449111111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449111107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52685865df53cc845b45ec886ab3ce0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlanetRotation
+  rotationSpeed: 10
+  selectedAxis: 1
+  customAxis: {x: 0, y: 1, z: 0}
+  clockwise: 0
+--- !u!1 &1595534295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1103792917632102, guid: b4201d402613a4464b35c805dafcca62, type: 3}
+  m_PrefabInstance: {fileID: 122833243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1595534299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595534295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52685865df53cc845b45ec886ab3ce0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlanetRotation
+  rotationSpeed: 7
+  selectedAxis: 1
+  customAxis: {x: 0, y: 1, z: 0}
+  clockwise: 0
 --- !u!1001 &1606089167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -426,6 +501,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1628933999407032, guid: b4201d402613a4464b35c805dafcca62, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 272308706}
     - targetCorrespondingSourceObject: {fileID: 1103792917632102, guid: b4201d402613a4464b35c805dafcca62, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1606089170}
@@ -659,27 +737,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3856301425944534239, guid: ad73a2f76bac22547a55d3762a4b9928, type: 3}
   m_PrefabInstance: {fileID: 1820348993}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1853253209 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1377197793697218, guid: b4201d402613a4464b35c805dafcca62, type: 3}
-  m_PrefabInstance: {fileID: 122833243}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1853253210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853253209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52685865df53cc845b45ec886ab3ce0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlanetRotation
-  rotationSpeed: 7
-  selectedAxis: 1
-  customAxis: {x: 0, y: 1, z: 0}
-  clockwise: 0
 --- !u!1 &1976647580
 GameObject:
   m_ObjectHideFlags: 0
