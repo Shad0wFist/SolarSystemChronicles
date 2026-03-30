@@ -802,6 +802,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894211579}
     m_Modifications:
+    - target: {fileID: 3278985597476859260, guid: 9e2f4d71a09f6bc4bab5be05a1f497bf, type: 3}
+      propertyPath: m_text
+      value: "\u041F\u041B\u0410\u041D\u0415\u0422\u0410: \u0412\u0415\u041D\u0415\u0420\u0410\n\u0410\u0422\u041C\u041E\u0421\u0424\u0415\u0420\u0410:
+        \u0423\u0413\u041B\u0415\u041A\u0418\u0421\u041B\u042B\u0419 \u0413\u0410\u0417\n\u0421\u0420\u0415\u0414\u041D\u042F\u042F
+        \u0422\u0415\u041C\u041F\u0415\u0420\u0410\u0422\u0423\u0420\u0410: +462\xB0C\n\u0414\u0418\u0410\u041C\u0415\u0422\u0420:
+        12,104 \u041A\u041C\n\u0413\u0420\u0410\u0412\u0418\u0422\u0410\u0426\u0418\u042F:
+        8.87 \u041C/\u0421\xB2\n\u041F\u041E\u0427\u0422\u0418 \u041A\u0410\u041A
+        \u0417\u0415\u041C\u041B\u042F (95%)"
+      objectReference: {fileID: 0}
     - target: {fileID: 5131381877529307342, guid: 9e2f4d71a09f6bc4bab5be05a1f497bf, type: 3}
       propertyPath: m_Name
       value: MonitorCanvas
