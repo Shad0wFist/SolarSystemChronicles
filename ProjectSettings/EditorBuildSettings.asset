@@ -23,6 +23,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mars.unity
     guid: 87c4d20077dd1a94d9622df7bf5a7d5d
+  - enabled: 1
+    path: Assets/Scenes/Mercury.unity
+    guid: 505641f64ed22a54e91bc7e506c5c4bd
+  - enabled: 1
+    path: Assets/Scenes/Earth.unity
+    guid: 9cdcd574606cd82468f189b99891636b
+  - enabled: 1
+    path: Assets/Scenes/Jupiter.unity
+    guid: 202aff76570f01240bbbae3fb952ed3c
+  - enabled: 1
+    path: Assets/Scenes/Saturn.unity
+    guid: 56407948ad274ae41a7b247681a36a48
+  - enabled: 1
+    path: Assets/Scenes/Uran.unity
+    guid: cde664673e213724fb2801b9f69e3caf
+  - enabled: 1
+    path: Assets/Scenes/Neptun.unity
+    guid: be96eb1c1c21525488d32c7554710d4d
+  - enabled: 1
+    path: Assets/Scenes/Pluto.unity
+    guid: 4609e78f854cebe49937ac3acdf645b8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 58e74a2bcaf893a4faa900aec35a902e, type: 2}
