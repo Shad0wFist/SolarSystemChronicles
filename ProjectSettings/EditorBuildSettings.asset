@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Venus.unity
     guid: 9d9c789ee69702849b4a22e131d02296
+  - enabled: 1
+    path: Assets/Scenes/VenusLand.unity
+    guid: 9dd38ac2157f26a4984b4c3b8abd7c5f
+  - enabled: 1
+    path: Assets/Scenes/Mars.unity
+    guid: 87c4d20077dd1a94d9622df7bf5a7d5d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 58e74a2bcaf893a4faa900aec35a902e, type: 2}

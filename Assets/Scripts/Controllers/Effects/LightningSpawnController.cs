@@ -32,6 +32,9 @@ public class LightningSpawnController : MonoBehaviour
     [SerializeField]
     private Transform m_PlayerCamera;
 
+    [SerializeField]
+    private float m_InitialDelay = 5f;
+
     private List<LightningItem> m_Pool = new List<LightningItem>();
 
     private BoxCollider m_SpawnZone;
@@ -66,6 +69,12 @@ public class LightningSpawnController : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(StartWithDelay());
+    }
+
+    private IEnumerator StartWithDelay()
+    {
+        yield return new WaitForSeconds(m_InitialDelay);
         StartCoroutine(LightningRoutine());
     }
 

@@ -23,4 +23,8 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Mars()
+    {
+        SceneManager.LoadScene("Mars");
+    }
 }
