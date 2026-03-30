@@ -9,6 +9,13 @@ public class CameraController : MonoBehaviour
     public float maxAngle = 80.0f;
     private float rotationX = 0.0f;
 
+    /*void Start()
+    {
+    // Фиксирует курсор в центре и скрывает его
+    Cursor.lockState = CursorLockMode.Locked; 
+    Cursor.visible = false;
+    }*/
+
     protected void Update()
     {
         if (PauseMenu.isPaused)
