@@ -148,7 +148,7 @@ RectTransform:
   m_GameObject: {fileID: 99269612}
   m_LocalRotation: {x: 0.0008472435, y: 0.9989833, z: -0.045073852, w: 0.000038228245}
   m_LocalPosition: {x: 0, y: 0, z: 20}
-  m_LocalScale: {x: 6.7959237, y: 8.658, z: 8.658}
+  m_LocalScale: {x: 6.7959237, y: 13.580073, z: 8.658}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1691842396}
@@ -990,7 +990,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233229570}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1233229573
 Camera:
   m_ObjectHideFlags: 0

@@ -2199,7 +2199,6 @@ Transform:
   - {fileID: 1723640094}
   - {fileID: 1182005109}
   - {fileID: 1672061672}
-  - {fileID: 774041890}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370962687
@@ -3777,11 +3776,11 @@ Transform:
   m_GameObject: {fileID: 774041889}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2, y: 30.9, z: -23.46}
-  m_LocalScale: {x: 3.246, y: 3.0137, z: 4.279}
+  m_LocalPosition: {x: 0.636, y: 2.3899996, z: -0.345}
+  m_LocalScale: {x: 8.695683, y: 8.073376, z: 11.462977}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 322686978}
+  m_Father: {fileID: 850074225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &774041891
 MonoBehaviour:
@@ -3795,21 +3794,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7241eb24baf4fa4bbf7732dd6031f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioTest
-  firstClip: {fileID: 8300000, guid: f7d53dbd867ca9a40a35b54931bfcc8f, type: 3}
-  secondClip: {fileID: 8300000, guid: f7d53dbd867ca9a40a35b54931bfcc8f, type: 3}
+  firstClip: {fileID: 8300000, guid: 81e2056ba62b1eb44b991f5d88e084d0, type: 3}
+  secondClip: {fileID: 8300000, guid: f9d39f93ee61a3f4a9ef8eb75510c0a0, type: 3}
   firstSubtitles:
-  - text: "\u041F\u0438\u0446\u0446\u0430"
+  - text: "\u041F\u0440\u0438\u0432\u0435\u0442"
     delay: 0
-  - text: "\u041C\u0430\u043A\u0430\u0440\u043E\u043D\u044B"
-    delay: 1
   secondSubtitles:
-  - text: "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D \u043C\u0430\u0440\u0441\u043E\u0445\u043E\u0434
-      \xAB\u041D\u0430\u0441\u0442\u043E\u0439\u0447\u0438\u0432\u043E\u0441\u0442\u044C"
+  - text: "\u041E, \u0432\u043E\u0442 \u044D\u0442\u043E \u0441\u044E\u0440\u043F\u0438\u0437"
     delay: 0
-  - text: "\u041E\u043D \u0432\u0441\u0451 \u0435\u0449\u0451 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442
-      \u0438 \u043F\u0435\u0440\u0435\u0434\u0430\u0451\u0442 \u0434\u0430\u043D\u043D\u044B\u0435"
-    delay: 3
-  delayBetweenClips: 2
+  - text: "\u041C\u0430\u0440\u0441\u043E\u0445\u043E\u0434 \"\u041D\u0430\u0441\u0442\u043E\u0439\u0447\u0438\u0432\u043E\u0441\u0442\u044C\""
+    delay: 2
+  - text: "\u0427\u0435\u0441\u0442\u043D\u043E \u0433\u043E\u0432\u043E\u0440\u044F,
+      \u043D\u0435 \u043E\u0436\u0438\u0434\u0430\u043B \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C
+      \u043A\u043E\u0433\u043E-\u0442\u043E \u0438\u0437 \u0441\u0442\u0430\u0440\u044B\u0445
+      \u0437\u043D\u0430\u043A\u043E\u043C\u044B\u0445"
+    delay: 4.5
+  - text: "\u041E\u043D \u0442\u0443\u0442 \u0441 2021, \u043E\u0434\u0438\u043D,
+      \u0432 \u044D\u0442\u043E\u0439 \u043F\u044B\u043B\u0438"
+    delay: 8
+  - text: "\u0438 \u0432\u0441\u0435 \u0435\u0449\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442!"
+    delay: 12
+  delayBetweenClips: 1
   defaultSubtitleDuration: 3
   subtitlePanel: {fileID: 1520786612}
   subtitleText: {fileID: 2061849650}
@@ -4376,6 +4381,7 @@ Transform:
   m_Children:
   - {fileID: 898777402}
   - {fileID: 1268718755}
+  - {fileID: 774041890}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &850074226
