@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Pluto.unity
     guid: 4609e78f854cebe49937ac3acdf645b8
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 58e74a2bcaf893a4faa900aec35a902e, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5b3d00f8cc9b54244b3d12b3188a76af, type: 2}
   m_UseUCBPForAssetBundles: 0
