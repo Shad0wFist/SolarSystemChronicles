@@ -311,6 +311,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3031048a6bf5860479678fab928316df, type: 3}
+--- !u!1 &709179064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 709179065}
+  m_Layer: 0
+  m_Name: Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &709179065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709179064}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.04, y: 0.39, z: -18.69}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &721836425 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5836644595018251683, guid: 3031048a6bf5860479678fab928316df, type: 3}
@@ -370,6 +401,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4025394146766441708, guid: 8c7bd42ba9e7d6b47903ed83601d6078, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 709179065}
     - target: {fileID: 8410802994475563998, guid: 8c7bd42ba9e7d6b47903ed83601d6078, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1223,3 +1258,4 @@ SceneRoots:
   - {fileID: 1621414689}
   - {fileID: 1114724263}
   - {fileID: 2055049064}
+  - {fileID: 709179065}
