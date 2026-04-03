@@ -1010,7 +1010,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: a6da5bb5adde1cb47b864f0d3192e284, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1406,6 +1406,10 @@ PrefabInstance:
     - target: {fileID: 1759841155926543693, guid: 8c7bd42ba9e7d6b47903ed83601d6078, type: 3}
       propertyPath: m_Height
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025394146766441708, guid: 8c7bd42ba9e7d6b47903ed83601d6078, type: 3}
+      propertyPath: fallThreshold
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6793950906795183739, guid: 8c7bd42ba9e7d6b47903ed83601d6078, type: 3}
       propertyPath: m_CameraYOffset
