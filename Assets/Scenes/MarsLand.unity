@@ -4051,7 +4051,7 @@ MonoBehaviour:
   startDelay: 0
   subtitlePanel: {fileID: 1520786612}
   subtitleText: {fileID: 2061849650}
-  backgroundMusicObject: {fileID: 0}
+  backgroundMusicObject: {fileID: 1460501101}
   musicVolumeDuringSequence: 0.1
   fadeDuration: 1
   hasBeenTriggered: 0
@@ -7273,7 +7273,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8d1c059702abf84409533744dcc5a87d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
