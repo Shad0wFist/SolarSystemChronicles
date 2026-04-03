@@ -4201,6 +4201,7 @@ GameObject:
   - component: {fileID: 2702837924167586865}
   - component: {fileID: 7318016591619556839}
   - component: {fileID: 9012978418230512785}
+  - component: {fileID: 7158827764399621473}
   m_Layer: 0
   m_Name: floor_2
   m_TagString: Untagged
@@ -4270,6 +4271,27 @@ LODGroup:
     renderers:
     - renderer: {fileID: 199575716700941345}
   m_Enabled: 1
+--- !u!65 &7158827764399621473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466874875988297225}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.39, y: 0.31, z: 4}
+  m_Center: {x: 0.05, y: 0, z: 0}
 --- !u!1 &8589070016700061858
 GameObject:
   m_ObjectHideFlags: 0
