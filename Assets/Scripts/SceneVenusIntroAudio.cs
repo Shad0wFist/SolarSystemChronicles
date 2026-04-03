@@ -1,19 +1,13 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using TMPro;
 
-[System.Serializable]
-public class SubtitleSegment
-{
-    public string text;
-    public float delay; // Задержка перед показом (в секундах)
-}
-
-public class AudioTest : MonoBehaviour
+public class SceneVenusIntroAudio : MonoBehaviour
 {
     [Header("🔊 Audio Clips")]
-    public AudioClip firstClip;   // morsetest
-    public AudioClip secondClip;  // test
+    public AudioClip firstClip;
+    public AudioClip secondClip;
+    public AudioClip thirdClip;
 
     [Header("📝 Subtitles - Первый клип")]
     public SubtitleSegment[] firstSubtitles;
@@ -21,19 +15,25 @@ public class AudioTest : MonoBehaviour
     [Header("📝 Subtitles - Второй клип")]
     public SubtitleSegment[] secondSubtitles;
 
+    [Header("📝 Subtitles - Третий клип")]
+    public SubtitleSegment[] thirdSubtitles;
+
     [Header("⚙️ Settings")]
+    [Tooltip("Задержка между клипами (секунды)")]
     public float delayBetweenClips = 1f;
-    public float defaultSubtitleDuration = 3f;
 
     [Tooltip("Задержка перед началом последовательности")]
-    public float startDelay = 0f;
+    public float startDelay = 3f;
+
+    [Tooltip("Сколько показывать последний субтитр после окончания")]
+    public float subtitleHoldTime = 2f;
 
     [Header("🎨 UI")]
     public GameObject subtitlePanel;
     public TextMeshProUGUI subtitleText;
 
     [Header("🎵 Фоновая музыка")]
-    [Tooltip("Объект с фоновой музыкой (которую нужно приглушить)")]
+    [Tooltip("Объект с фоновой музыкой")]
     public GameObject backgroundMusicObject;
 
     [Tooltip("Громкость музыки во время последовательности (0-1)")]
@@ -44,7 +44,6 @@ public class AudioTest : MonoBehaviour
     public float fadeDuration = 1f;
 
     [Header("🔍 Debug")]
-    public bool hasBeenTriggered = false;
     public bool showDebugLogs = true;
 
     private AudioSource audioSource;
@@ -64,53 +63,47 @@ public class AudioTest : MonoBehaviour
         if (subtitlePanel != null)
             subtitlePanel.SetActive(false);
 
-        // Находим источник фоновой музыки
+        // Находим фоновую музыку
         if (backgroundMusicObject != null)
         {
             backgroundMusicSource = backgroundMusicObject.GetComponent<AudioSource>();
             if (backgroundMusicSource != null)
                 originalMusicVolume = backgroundMusicSource.volume;
         }
+
+        Invoke(nameof(StartAudioSequence), startDelay);
     }
 
-    void OnTriggerEnter(Collider other)
+    void StartAudioSequence()
     {
-        if (hasBeenTriggered || isPlaying) return;
-
-        if (other.CompareTag("Player") || other.gameObject.name.Contains("Player"))
+        // Проверяем, что есть хотя бы один клип
+        if (firstClip == null && secondClip == null && thirdClip == null)
         {
-            if (showDebugLogs)
-                Debug.Log("🎯 Игрок вошёл в зону триггера!");
-
-            // Запускаем с задержкой если нужно
-            if (startDelay > 0)
-                Invoke(nameof(StartSequence), startDelay);
-            else
-                StartSequence();
+            Debug.LogWarning("⚠️ Ни один Audio Clip не назначен!");
+            return;
         }
-    }
 
-    void StartSequence()
-    {
+        // Приглушаем музыку
+        if (backgroundMusicSource != null)
+        {
+            StartCoroutine(FadeMusicVolume(musicVolumeDuringSequence, fadeDuration));
+        }
+
+        if (showDebugLogs)
+            Debug.Log("🎬 Запуск аудио последовательности (3 клипа)");
+
         StartCoroutine(PlayAudioSequence());
     }
 
     IEnumerator PlayAudioSequence()
     {
-        hasBeenTriggered = true;
         isPlaying = true;
-
-        // 📉 Приглушаем фоновую музыку
-        if (backgroundMusicSource != null)
-        {
-            yield return StartCoroutine(FadeMusicVolume(musicVolumeDuringSequence, fadeDuration));
-        }
 
         // === ПЕРВЫЙ КЛИП ===
         if (firstClip != null)
         {
             if (showDebugLogs)
-                Debug.Log($"🔊 Воспроизводим первый клип: {firstClip.name}");
+                Debug.Log($"🔊 Клип 1: {firstClip.name}");
 
             yield return StartCoroutine(PlayClipWithSubtitles(firstClip, firstSubtitles));
         }
@@ -121,15 +114,32 @@ public class AudioTest : MonoBehaviour
         if (secondClip != null)
         {
             if (showDebugLogs)
-                Debug.Log($"🔊 Воспроизводим второй клип: {secondClip.name}");
+                Debug.Log($"🔊 Клип 2: {secondClip.name}");
 
             yield return StartCoroutine(PlayClipWithSubtitles(secondClip, secondSubtitles));
         }
 
-        // 📈 Возвращаем громкость фоновой музыки
+        yield return new WaitForSeconds(delayBetweenClips);
+
+        // === ТРЕТИЙ КЛИП ===
+        if (thirdClip != null)
+        {
+            if (showDebugLogs)
+                Debug.Log($"🔊 Клип 3: {thirdClip.name}");
+
+            yield return StartCoroutine(PlayClipWithSubtitles(thirdClip, thirdSubtitles));
+        }
+
+        // Держим последний субтитр
+        yield return new WaitForSeconds(subtitleHoldTime);
+
+        // Скрываем субтитры
+        HideSubtitle();
+
+        // Возвращаем громкость музыки
         if (backgroundMusicSource != null)
         {
-            yield return StartCoroutine(FadeMusicVolume(originalMusicVolume, fadeDuration));
+            StartCoroutine(FadeMusicVolume(originalMusicVolume, fadeDuration));
         }
 
         isPlaying = false;
@@ -166,12 +176,8 @@ public class AudioTest : MonoBehaviour
 
         // Ждём окончания клипа
         yield return new WaitForSeconds(clip.length);
-
-        // Скрываем субтитры
-        HideSubtitle();
     }
 
-    // 🎵 Метод плавного изменения громкости музыки
     IEnumerator FadeMusicVolume(float targetVolume, float duration)
     {
         if (backgroundMusicSource == null) yield break;
@@ -203,34 +209,20 @@ public class AudioTest : MonoBehaviour
     {
         if (subtitlePanel != null)
             subtitlePanel.SetActive(false);
+
+        if (subtitleText != null)
+            subtitleText.text = "";
     }
 
-    // Для ручной остановки (опционально)
     public void StopSequence()
     {
         StopAllCoroutines();
         audioSource.Stop();
         HideSubtitle();
 
-        // Возвращаем громкость музыки
         if (backgroundMusicSource != null)
             backgroundMusicSource.volume = originalMusicVolume;
 
         isPlaying = false;
-        hasBeenTriggered = false;
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = new Color(0, 1, 0, 0.3f);
-        Collider col = GetComponent<Collider>();
-        if (col != null)
-        {
-            if (col is BoxCollider box)
-            {
-                Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
-                Gizmos.DrawCube(box.center, box.size);
-            }
-        }
     }
 }
