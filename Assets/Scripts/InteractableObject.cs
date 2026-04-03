@@ -1,64 +1,70 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
+[RequireComponent(typeof(Collider))]
 public class InteractableObject : MonoBehaviour
 {
-    [Header("Настройки курсора")]
-    public bool changeCursorOnHover = true; // Менять ли курсор при наведении
+    [SerializeField]
+    private bool m_ChangeCursorOnHover = true;
 
-    private bool isHovered = false;
+    [SerializeField]
+    private float m_HapticIntensity = 0.5f;
+    [SerializeField]
+    private float m_HapticDuration = 0.1f;
 
-    void Start()
+    // Эти методы вызываются XRI автоматически при событиях луча
+    public void OnXRHoverEnter(HoverEnterEventArgs args)
     {
-        // Важно: у объекта должен быть Collider (Box или Sphere), иначе мышь его не увидит!
-        if (GetComponent<Collider>() == null)
+        Debug.Log("VR Луч наведен на: " + name);
+        if (args.interactorObject is UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor controllerInteractor)
         {
-            Debug.LogWarning("У объекта " + name + " нет Collider! Добавьте его.");
+            controllerInteractor.SendHapticImpulse(m_HapticIntensity, m_HapticDuration);
+        }
+
+        HandleHoverEffect(true);
+    }
+
+    public void OnXRHoverExit(HoverExitEventArgs args)
+    {
+        Debug.Log("VR Луч покинул: " + name);
+
+        HandleHoverEffect(false);
+    }
+
+    public void OnXRSelectEntered(SelectEnterEventArgs args)
+    {
+        // Select в XRI по умолчанию привязан к кнопке Trigger или Grip
+        ExecuteInteraction();
+    }
+
+    private void ExecuteInteraction()
+    {
+        Debug.Log("Взаимодействие с: " + name);
+
+        // Логика для планеты
+        if (TryGetComponent(out PlanetButton planetBtn))
+        {
+            planetBtn.LoadPlanetScene();
+        }
+
+        // Логика для терминала
+        if (TryGetComponent(out TerminalScreen terminal))
+        {
+            terminal.OpenMenu();
         }
     }
 
-    void OnMouseEnter()
+    private void HandleHoverEffect(bool isEntering)
     {
-        isHovered = true;
-        
-        // Визуальная обратная связь через курсор (опционально)
-        if (changeCursorOnHover)
+        if (m_ChangeCursorOnHover)
         {
             Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         }
-        
-        Debug.Log("Наведение на: " + name);
     }
 
-    void OnMouseExit()
-    {
-        isHovered = false;
-        
-        // Возвращаем курсор в исходное состояние
-        if (changeCursorOnHover)
-        {
-            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-        }
-    }
+    // Оставляем для поддержки мыши (ПК-тесты)
+    private void OnMouseEnter() => HandleHoverEffect(true);
+    private void OnMouseExit() => HandleHoverEffect(false);
+    private void OnMouseDown() => ExecuteInteraction();
 
-    void OnMouseDown()
-    {
-        if (isHovered)
-        {
-            Debug.Log("Клик по объекту: " + name);
-            
-            // Если это Планета -> загружаем сцену
-            PlanetButton planetBtn = GetComponent<PlanetButton>();
-            if (planetBtn != null) 
-            {
-                planetBtn.LoadPlanetScene();
-            }
-
-            // Если это Экран -> запускаем меню
-            TerminalScreen terminal = GetComponent<TerminalScreen>();
-            if (terminal != null) 
-            {
-                terminal.OpenMenu();
-            }
-        }
-    }
 }
