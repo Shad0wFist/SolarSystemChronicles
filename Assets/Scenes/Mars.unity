@@ -696,7 +696,7 @@ PrefabInstance:
     - target: {fileID: 4025394146766441708, guid: 8c7bd42ba9e7d6b47903ed83601d6078, type: 3}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 1424419525}
+      objectReference: {fileID: 0}
     - target: {fileID: 8410802994475563998, guid: 8c7bd42ba9e7d6b47903ed83601d6078, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1116,37 +1116,6 @@ MonoBehaviour:
   selectedAxis: 1
   customAxis: {x: 0, y: 1, z: 0}
   clockwise: 0
---- !u!1 &1424419524
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1424419525}
-  m_Layer: 0
-  m_Name: Spawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1424419525
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424419524}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.35, y: 0.39, z: -33.46777}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446243476 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5425696717754200349, guid: 25e6ade447d3695418067ed3a9c4d20e, type: 3}
@@ -1753,4 +1722,3 @@ SceneRoots:
   - {fileID: 1674237162}
   - {fileID: 2085134646}
   - {fileID: 1153742804}
-  - {fileID: 1424419525}
